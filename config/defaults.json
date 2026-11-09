@@ -1,0 +1,67 @@
+{
+ "eades": {
+  "candidate": "step=0.1_crep=1.0_cspring=2.0",
+  "settings": {
+   "step": 0.1,
+   "c_rep": 1.0,
+   "c_spring": 2.0,
+   "l": 1.0
+  }
+ },
+ "fr": {
+  "candidate": "T0=0.2_Tend=0.01",
+  "settings": {
+   "T0_factor": 0.2,
+   "T_end_ratio": 0.01
+  }
+ },
+ "_record": {
+  "frozen_metrics": {
+   "METRICS_VERSION": "1.0",
+   "STRESS_SCALE": 0.15,
+   "NP_K": 10,
+   "OVERLAP_REL": 0.1,
+   "CROWD_REL": 0.5,
+   "CLAMP_REL": 0.001,
+   "SHORT_EDGE_REL": 0.1,
+   "SMALL_ANGLE_RATIO": 0.25,
+   "ORIENT_TOL": 1e-12,
+   "WEIGHTS": {
+    "crossing": 0.35,
+    "angular": 0.2,
+    "edge_length": 0.05,
+    "separation_crowd": 0.2,
+    "stress": 0.2
+   },
+   "WEIGHTS_V2": {
+    "crossing": 0.4,
+    "angular": 0.2,
+    "edge_length": 0.1,
+    "separation": 0.1,
+    "stress": 0.2
+   },
+   "WEIGHTS_V1": {
+    "crossing": 0.35,
+    "angular": 0.25,
+    "edge_length": 0.2,
+    "separation": 0.2
+   },
+   "WEIGHTS_HELDOUT": {
+    "crossing": 0.25,
+    "angular": 0.15,
+    "separation": 0.15,
+    "stress": 0.15,
+    "np_k10": 0.3
+   },
+   "crossing_rule": "pairs of closed segments sharing no endpoint; concurrent pairwise; T-junction counts; collinear overlap once per pair; zero-length edges skipped"
+  },
+  "dominance": {
+   "S_TOL": 0.005,
+   "CROSS_REL": 0.05,
+   "CROSS_ABS": 1.0,
+   "OVERLAP_TOL": 0.01,
+   "SEP_TOL": 0.02,
+   "NP_TOL": 0.02
+  }
+ }
+}

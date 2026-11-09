@@ -1,0 +1,7 @@
+{
+ "states": 42000,
+ "episodes": 2000,
+ "provisional": false,
+ "mixture": "40/40/20 default/random/rule controller",
+ "clip_rate_max": 0.01138095238095238
+}
